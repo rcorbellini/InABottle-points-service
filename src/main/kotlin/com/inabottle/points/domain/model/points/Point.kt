@@ -12,7 +12,6 @@ data class Point(
 )
 
 
-
 interface IDescEnum {
     val description: String
 }
@@ -32,7 +31,7 @@ interface IAmountPoints {
 
 enum class AmountPoints() : IAmountPoints {
     VERY_LOW_AMOUNT{
-        override val points =  BigDecimal(2)
+        override val points =  BigDecimal(3)
         override val range = 0.0..200.0
     },
     LOW_AMOUNT{
